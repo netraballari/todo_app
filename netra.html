@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <header class="bg-blue-600 text-white">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold">
+                HealthCare Management
+            </div>
+            <div>
+                <a href="#" class="px-3 py-2 hover:bg-blue-700 rounded">Home</a>
+                <a href="#services" class="px-3 py-2 hover:bg-blue-700 rounded">Services</a>
+                <a href="#about" class="px-3 py-2 hover:bg-blue-700 rounded">About</a>
+                <a href="#contact" class="px-3 py-2 hover:bg-blue-700 rounded">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-blue-100 py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold mb-4">Welcome to HealthCare Management</h1>
+                <p class="text-xl mb-8">Providing quality healthcare solutions for your needs</p>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Get Started</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Patient Management</h3>
+                        <p>Efficiently manage patient records, appointments, and medical history.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Billing & Insurance</h3>
+                        <p>Streamline billing processes and manage insurance claims with ease.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Telemedicine</h3>
+                        <p>Provide remote healthcare services through secure video consultations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-100 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+                <p class="text-center max-w-2xl mx-auto">
+                    HealthCare Management is dedicated to providing innovative solutions for healthcare providers. 
+                    Our mission is to improve patient care through efficient management systems and cutting-edge technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+                <form class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HealthCare Management. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
